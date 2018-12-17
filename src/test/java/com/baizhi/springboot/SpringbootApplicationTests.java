@@ -11,8 +11,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 public class SpringbootApplicationTests {
     @Autowired
-    UserMapper userMapper
-            ;
+    UserMapper userMapper;
     @Test
     public void contextLoads() {
 

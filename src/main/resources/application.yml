@@ -1,0 +1,17 @@
+server:
+  port: 8888
+  context-path: /springboot
+  jsp-servlet:
+    init-parameters:
+      development: true
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:oracle:thin:@localhost:1521:XE
+    driver-class-name: oracle.jdbc.OracleDriver
+    username: hr
+    password: hr
+  mvc:
+    view:
+      prefix: /
+      suffix: .jsp
