@@ -13,7 +13,7 @@ import tk.mybatis.spring.annotation.MapperScan;
 
 import java.util.ArrayList;
 import java.util.List;
-@MapperScan
+@MapperScan(basePackages = "com.baizhi.springboot.mapper")
 @SpringBootApplication
 public class SpringbootApplication {
     public static void main(String[] args) {

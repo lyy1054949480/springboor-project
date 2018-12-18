@@ -7,8 +7,8 @@ server:
 spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
-    url: jdbc:oracle:thin:@localhost:1521:XE
-    driver-class-name: oracle.jdbc.OracleDriver
+    url: jdbc:mysql://192.168.0.18:3306/info?characterEncoding=UTF-8
+    driver-class-name: com.mysql.jdbc.Driver
     username: hr
     password: hr
   mvc:

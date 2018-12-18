@@ -46,6 +46,11 @@
         </dependency>
         <!--数据源-->
         <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.38</version>
+        </dependency>
+        <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid</artifactId>
             <version>1.0.19</version>
@@ -85,6 +90,27 @@
             <artifactId>fastjson</artifactId>
             <version>1.2.54</version>
         </dependency>
+        <!-- lucene 3个jar-->
+        <!-- https://mvnrepository.com/artifact/org.apache.lucene/lucene-analyzers-common -->
+        <dependency>
+            <groupId>org.apache.lucene</groupId>
+            <artifactId>lucene-analyzers-common</artifactId>
+            <version>4.10.3</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.lucene/lucene-queryparser -->
+        <dependency>
+            <groupId>org.apache.lucene</groupId>
+            <artifactId>lucene-queryparser</artifactId>
+            <version>4.10.3</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.lucene/lucene-core -->
+        <dependency>
+            <groupId>org.apache.lucene</groupId>
+            <artifactId>lucene-core</artifactId>
+            <version>4.10.3</version>
+        </dependency>
+
+
 
     </dependencies>
 
@@ -103,7 +129,7 @@
                 </dependencies>
                 <configuration>
                     <!--配置文件的路径 -->
-                    <configurationFile>${basedir}/src/main/resources/generatorConfig.xml</configurationFile>
+                    <configurationFile>src/main/resources/mapper/generatorConfig.xml</configurationFile>
                     <overwrite>true</overwrite>
                 </configuration>
             </plugin>
